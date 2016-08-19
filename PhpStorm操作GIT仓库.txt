@@ -1,0 +1,8 @@
+PhpStorm操作GIT仓库（入门篇）
+（1）将指定文件添加到暂存区
+    快捷键：Crt+Alt+A（和QQ截屏快捷键冲突，也有可能和其他快捷键冲突）
+    命令位置：VCS->Git->Add
+    分析：点击Add之后，相当于执行了 git add thisFile。Add之后，PhpStorm中项目文件列表中，此文件就会从红色变成绿色。PhpStorm打开指定项目之后，首次新建文件，会弹出一个对话框，提示你是否要将此文件加入暂存区。点击确认之后就相当于执行了一次Add，你也可以勾选记住操作，这样之后所有新建文件就会默认执行Add操作。
+（2）将指定文件从暂存区删除
+    命令位置：VCD->Git->Revert
+    分析：相当于执行了 git checkout -- thisFile。Revert将撤销Add操作。
