@@ -1,4 +1,17 @@
 PhpStorm操作GIT仓库（入门篇）
+git命令常用
+（1）切换到分支
+     命令位置：VCD->Git->Branches->Checkout Tag or Revision->输入master
+     分析：相当于执行命令git checkout master。每次拿到新的开发任务时候，强烈建议回到master分支，更新分支，新建新的分支，在新的分支上进行开发。
+（2）更新分支
+    命令位置：VCS->Git->Pull->选择origin/master
+    分析：相当于执行了git pull origin master 。获取远程分支最新内容，并和当前分支践行merge操作。在执行pull之前，请保证本地没有为提交的修改。
+（3）新建分支
+    命令位置：VCD->Git->Branches->New Branches->输入dev_01
+    分析：相当于执行了git checkout -b dev_01。由于我们的代码都是用arc进行管理的，所以分支名不是很重要，本地可以结合团队要求和自己的开发习惯进行命名，当每次任务完成（开发完成、代码已审核、任务已测试、代码已上线、正式环境已验证）之后，清除本地多余分支。
+（4）删除无用分支
+
+
 （1）将指定文件添加到暂存区
     快捷键：Crt+Alt+A（和QQ截屏快捷键冲突，也有可能和其他快捷键冲突）
     命令位置：VCS->Git->Add
