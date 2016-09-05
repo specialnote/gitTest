@@ -11,4 +11,4 @@ PhpStorm操作GIT仓库（入门篇）
     分析：相当于执行了 git commit -m '备注信息，必须能准确、简短的描述此次更改的内容'。PhpStorm中执行Commit File 命令时候会自动检测选中文件是否执行过Add操作，如果没有执行过Add，它会自动执行Add然后再执行Commit。
 （4）将本地版本库提交至远程仓库
     命令位置：Vcs->Git->Push
-    分析
+    分析：相当于执行了 git push [origin master]，默认远程仓库名为origin，远程分支名根据实际情况而定。
