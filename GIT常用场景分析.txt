@@ -1,3 +1,13 @@
+配置到代码仓库的ssh权限（假设本地已经有能够直接使用的ssh-key）
+    新建~/.ssh/config文件（在当前登录用户的家文件夹下找到.ssh文件夹，新建config文件，并根据以下内容进行配置）
+        Host github.com
+        HostName github.com
+        User git
+        Port 22
+        IdentityFile ~/.ssh/windows_github
+    配置完成之后测试是否有到github的权限
+        ssh -T git@github.com
+        
 GIT常用场景分析（入门篇）
     （1）克隆远程仓库到本地的指定位置
     （2）从远程拉取指定分支（更新本地指定分支代码）
