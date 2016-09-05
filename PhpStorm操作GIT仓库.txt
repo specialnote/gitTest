@@ -12,3 +12,11 @@ PhpStorm操作GIT仓库（入门篇）
 （4）将本地版本库提交至远程仓库
     命令位置：Vcs->Git->Push
     分析：相当于执行了 git push [origin master]，默认远程仓库名为origin，远程分支名根据实际情况而定。
+（5）获取远程所有分支的更新
+    命令位置：Vcs->Git->Fetch
+    分析：相当于执行了 git fetch origin。
+    fetch 和 pull 的区别，pull = fetch + merge。fetch 通常和 rebase 一起使用。
+（6）更改本地分支的基指
+    命令位置：Vcs->Git->Rebase
+    分析：相当于执行了 git rebase origin/master。将帮本记录直接指到远程master之后，可以简单的理解为在远程master分支基础上进行修改。
+
