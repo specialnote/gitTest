@@ -8,17 +8,13 @@
     配置完成之后测试是否有到github的权限
         ssh -T git@github.com
 
-常规操作流程
+GIT常用场景分析（入门篇）
     （1）更新本地master分支(git checkout master; git pull origin master)
     （2）新建分支(git checkout -b dev_01)
     （3）开发
     （4）更新分支(fit fetch origin; git rebase origin/master)
     （5）提交代码审核(arc diff[ --update])
     [（6）测试代码(可以跳过，arc patch D101)]
+    （7）冲突处理
 
-GIT常用场景分析（入门篇）
-    （1）克隆远程仓库到本地的指定位置
-    （2）从远程拉取指定分支（更新本地指定分支代码）
-    （3）将指定分支推到远程仓库
-    （4）在远程分支基础上进行开发
-    （5）简单的冲突处理
+
